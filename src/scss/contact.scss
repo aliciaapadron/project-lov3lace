@@ -1,0 +1,15 @@
+@import "./core/variables";
+@import "layout/header";
+@import "layout/form";
+@import "layout/footer";
+
+.container {
+  position: relative;
+  display: inline-block;
+
+  &__img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+}

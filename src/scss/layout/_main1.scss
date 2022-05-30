@@ -1,0 +1,110 @@
+// .container {
+//   position: relative;
+//   display: inline-block;
+//   &__img {
+//     background-size: cover;
+//     background-position: center;
+//     width: 100%;
+//   }
+// }
+// .motto {
+//   color: $color-black;
+//   background-color: $color-white;
+//   position: absolute;
+//   text-align: center;
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   margin-top: -40px;
+//   padding: 10px;
+//   &__text {
+//     font-size: 15px;
+//     font-weight: bold;
+//     line-height: 1.39;
+//   }
+//   @media all and (min-width: 768px) {
+//     color: $color-black;
+//     opacity: 75%;
+//   }
+// }
+
+.teamcontainer {
+  margin: 0, 15px;
+}
+.team {
+  padding: 30px 15px;
+  &__title {
+    font-size: 24px;
+    line-height: 1.88;
+    color: $color-silverpink;
+    font-weight: bold;
+    text-align: center;
+  }
+  @media all and (min-width: 768px) {
+    padding: 45px 45px 30px 45px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 45px 300px 60px 300px;
+  }
+}
+
+.team__title--article1,
+.dafo__article2,
+.dafo__article3 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-darkgrey;
+  text-align: center;
+  margin: 15px;
+  position: relative;
+}
+article.dafo__article2 {
+  margin-bottom: 35px;
+}
+.squarecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__square {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: $color-white;
+    position: absolute;
+    margin-top: -15px;
+  }
+}
+.dafo {
+  padding: 30px 15px;
+  background-color: $color-ligthgrey;
+  &__article2--strengths,
+  &__article3--weaknesses {
+    font-size: 22px;
+    color: $color-ruddypink;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  @media all and (min-width: 768px) {
+    padding: 45px 45px 60px 45px;
+    display: flex;
+    &__article2 {
+      padding-right: 15px;
+      width: 50%;
+    }
+    &__article3 {
+      padding-left: 15px;
+      width: 50%;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    padding: 45px 138px 60px 138px;
+    display: flex;
+    &__article2 {
+      padding-right: 22.5px;
+    }
+    &_article3 {
+      padding-left: 22.5px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.bio {
+  text-align: center;
+  &__photo {
+    width: 180px;
+    height: 180px;
+    /* margin: 0 55px 15px; */
+    border: solid 3px $color-ruddypink;
+    border-radius: 15px;
+  }
+  &__name {
+    color: $color-bazaar;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &__about {
+    color: $color-darkgrey;
+    font-size: 16px;
+    margin: 15px 30px;
+    line-height: 1.5;
+  }
+  &__social {
+    list-style-type: none;
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--media {
+      list-style-type: none;
+      font-size: 20px;
+      color: $color-silverpink;
+      padding: 0px 10px;
+      display: inline-block;
+      transition: transform 0.6 1s;
+      & :hover {
+        transform: scale(1.5);
+      }
+    }
+    &--dot {
+      color: $color-darkgrey;
+      font-size: 16px;
+      display: inline-block;
+    }
+    &--link {
+      color: $color-ruddypink;
+      text-decoration: none;
+    }
+  }
+
+  /* Mediaqueries tablet */
+  @media all and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin: 0px 44px 44px 44px;
+    /* Márgenes alrededor del contenedor, menos por arriba que ya nos lo da el QUIÉNES SOMOS */
+    &__photo {
+      width: 205px;
+      height: 205px;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0px 10px;
+      /* Margen para separar los textos de las fotos, puede que quede mejor haciendo una variable izqda-dcha también... */
+    }
+    &__name,
+    &__about,
+    &__social {
+      margin: 5px 0px;
+      /* Que estén lo más pegados posible al borde de su contenedor y tengan un pequeño margen igual entre ellos */
+    }
+    &__about {
+      text-align: left;
+      /* Esta alineación es la correcta de lectura, igual en los bloques de un lado y del otro, no cambia */
+    }
+  }
+
+  /* Mediaqueries desktop */
+  @media all and (min-width: 1200px) {
+    display: flex;
+    margin: 0px 138px 69px 138px;
+    /* Márgenes alrededor del contenedor, menos por arriba que ya nos lo da el QUIÉNES SOMOS, y por abajo la mitad para no separarlos demasiado */
+    &__photo {
+      width: 278px;
+      height: 278px;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0px 10px;
+    }
+    &__name,
+    &__about,
+    &__social {
+      margin: 10px 0;
+      /* Que estén lo más pegados posible a los bordes laterales de su contenedor pero haya una separación buena entre ellos (arriba y abajo) */
+    }
+    &__about {
+      text-align: left;
+      /* Esta alineación es la correcta de lectura, igual en los bloques de un lado y del otro, no cambia */
+    }
+  }
+}
+
+// @media (min-width: 768px)
+// .align__left {
+// display: grid;
+// grid-template-columns: 1fr 2fr;
+// align-items: center;
+// }

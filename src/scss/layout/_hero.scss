@@ -1,0 +1,42 @@
+.hero {
+  background-image: url(../images/NYhero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: 75%;
+  height: 421px;
+
+  @media all and (min-width: 1200px) {
+    height: 550px;
+  }
+}
+
+.motto {
+  background-color: $color-white;
+  color: $color-black;
+  position: relative;
+  text-align: center;
+  transform: translate(0, -75%);
+  margin: 0 20px;
+  padding: 10px;
+
+  &__text {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.39;
+  }
+
+  @media all and (min-width: 768px) {
+    color: $color-black;
+    opacity: 75%;
+    text-align: left;
+    margin-left: 46px;
+    width: 50%;
+    transform: translate(0, -100%);
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-left: 138px;
+    width: 25%;
+  }
+}

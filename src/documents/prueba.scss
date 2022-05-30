@@ -1,0 +1,133 @@
+// .wrapper_contact {
+//   margin: 0px 15px;
+
+//   @media all and (min-width: 768px) {
+//     margin: 0px 163px;
+//   }
+//   @media all and (min-width: 1200px) {
+//     margin: 0px 300px;
+//   }
+// }
+
+// .contact {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//   padding-top: 30px;
+//   padding-bottom: 58px;
+//   &__title {
+//     text-transform: uppercase;
+//     padding-bottom: 15px;
+//     font-size: 24px;
+//     line-height: 1.88;
+//     color: $color;
+//   }
+//   &__content {
+//     font-size: 16px;
+//     line-height: 1.5;
+//     color: $color-darkgrey;
+//   }
+//   &__required {
+//     color: $color-darkgrey;
+//     padding-top: 30px;
+//   }
+// }
+
+// .form__input {
+//   display: flex;
+//   flex-direction: column;
+//   // padding-top: 10px;
+//   // padding-bottom: 10px;
+
+//   &--box {
+//     height: 45px;
+//     border: 1px solid $color;
+//     margin-top: 7px;
+//     margin-bottom: 13px;
+//     padding-left: 10px;
+//     &:-webkit-autofill,
+//     &:-webkit-autofill:hover,
+//     &:-webkit-autofill:focus,
+//     &:-webkit-autofill:active {
+//       -webkit-box-shadow: 0 0 0 30px rgb(242, 231, 233) inset !important;
+//     }
+//   }
+
+//   &--textareabox {
+//     height: 105px;
+//     border: 1px solid $color;
+//     margin-top: 7px;
+//     margin-bottom: 13px;
+//     padding-left: 10px;
+//     padding-top: 10px;
+//     &:-webkit-autofill,
+//     &:-webkit-autofill:hover,
+//     &:-webkit-autofill:focus,
+//     &:-webkit-autofill:active {
+//       -webkit-box-shadow: 0 0 0 30px rgb(242, 231, 233) inset !important;
+//     }
+//   }
+// }
+
+// label {
+//   font-size: 14px;
+//   color: $color-darkgrey;
+// }
+
+// span {
+//   color: $color-ligth;
+// }
+
+// ::placeholder {
+//   font-size: 14px;
+//   color: $color-ligth;
+// }
+
+// .form__send {
+//   display: flex;
+//   justify-content: center;
+//   padding-top: 15px;
+//   padding-bottom: 60px;
+//   @media all and (min-width: 768px) {
+//     justify-content: right;
+//   }
+// }
+
+// .submit {
+//   text-transform: uppercase;
+//   width: 290px;
+//   height: 45px;
+//   padding: 0 15px;
+//   background-color: $color;
+//   border-radius: 4px;
+//   color: $color-white;
+//   border: 0px;
+//   @media all and (min-width: 768px) {
+//     width: 206px;
+//   }
+//   @media all and (min-width: 1200px) {
+//     width: 278px;
+//   }
+// }
+
+// @media all and (min-width: 1200px) {
+//   .desktopversion {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+//   .emaildesktop {
+//     width: 395px;
+//   }
+//   .phonedesktop {
+//     width: 162px;
+//   }
+// }
+
+// // input:-webkit-autofill,
+// // input:-webkit-autofill:hover,
+// // input:-webkit-autofill:focus,
+// // input:-webkit-autofill:active {
+// //   -webkit-box-shadow: 0 0 0 30px rgb(242, 231, 233) inset !important;
+// // }

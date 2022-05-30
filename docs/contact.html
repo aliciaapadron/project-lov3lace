@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+
+  <title>Project #L0V3lace</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap");
+  </style>
+  <style>
+    @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+  </style>
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./assets/css/contact.css" />
+</head>
+
+<body class="contactpage">
+  <!--HEADER-->
+  <header>
+    <div class="cont_header">
+      <div class="name">
+        <h1 class="name__title">Project #L0v3lace</h1>
+      </div>
+      <nav class="menutop">
+        <ul class="list">
+          <li class="list__item">
+            <a class="list__item--link" href="./index.html#team">Equipo</a>
+          </li>
+          <li class="list__item">
+            <a class="list__item--link" href="./index.html#seccion-quienes-somos">Quiénes somos</a>
+          </li>
+          <li class="list__item">
+            <a class="list__item--link" href="./contact.html" target="_blank">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--MAIN-->
+  <div class="container">
+    <img class="container__img" src="./assets/images/fotocontacto.jpg" alt="imagen de contacto" />
+  </div>
+  <div class="wrapper_contact">
+    <section class="contact">
+      <h1 class="contact__title">contacto</h1>
+      <p class="contact__content">
+        Si queréis conocer a estas cuatro mujeres que han decidido reinventarse,
+        ¡no dudes en contactar!
+      </p>
+      <leyend class="contact__required">Todos los campos marcados con <span>*</span> son
+        obligatorios.</leyend>
+    </section>
+    <form class="form" action="https://formspree.io/f/mgedyqnv" method="POST">
+      <fieldset class="form__input">
+        <label for="fullName" class="lable_name">Nombre completo<span>*</span></label>
+        <input class="form__input--box" id="fullName" type="text" name="fullName" placeholder="Nombre..." required />
+      </fieldset>
+      <section class="desktopversion">
+        <!--Necesito un div nuevo pra la versión ordenador, que agrupe solo email y tlf-->
+        <fieldset class="form__input">
+          <label for="email" class="email">Email<span>*</span></label>
+          <!--clase nueva para cambiar tamaño caja, desktop version-->
+          <input class="form__input--box emaildesktop" id="email" type="email" name="email"
+            placeholder="nombre.apellidos@mail.com" required />
+        </fieldset>
+        <fieldset class="form__input">
+          <label for="phone" class="phone">Teléfono</label>
+          <!--clase nueva para cambiar tamaño caja, desktop version-->
+          <input class="form__input--box phonedesktop" id="phone" type="tel" name="phone" placeholder="Ej:123456789" />
+        </fieldset>
+      </section>
+      <fieldset class="form__input">
+        <label for="message" class="message">Mensaje<span>*</span></label>
+        <textarea class="form__input--textareabox" id="message" name="message" placeholder="¿Qué necesitas?"
+          required></textarea>
+      </fieldset>
+      <fieldset class="form__send">
+        <input class="submit" type="submit" value="enviar" />
+      </fieldset>
+    </form>
+  </div>
+
+  <!--FOOTER-->
+  <footer class="grayline">
+    <div class="wrapper">
+      <div class="footer">
+        <small class="footer__copyright">Project #L0V3lace &copy; 2022</small>
+        <!--dar clase grid-->
+        <nav class="footer__nav">
+          <!--dar clase grid-->
+          <ul class="footer__nav--menu">
+            <li>
+              <a class="footer__nav--link" href="./index.html#team">equipo</a>
+            </li>
+            <li>
+              <a class="footer__nav--link" href="./index.html#seccion-quienes-somos">quiénes somos</a>
+            </li>
+            <li>
+              <a class="footer__nav--link" href="./contact.html" target="_blank">contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="footer__icon" href="https://adalab.es" target="_blank">
+          <!--dar clase grid-->
+
+          <img class="footer__adalab" src="./assets/images/logorosa.png" alt="logo de adalab"
+            title="Ir a página Adalab" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
